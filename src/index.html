@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acessibilidade</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="menu-container">
+            <button id="menu-toggle" class="hamburger-button" aria-expanded="false" aria-controls="main-menu">
+                <span class="hamburger-icon"></span>
+            </button>
+            <ul id="main-menu" class="menu-list">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="accessibility.html">O que é Acessibilidade?</a></li>
+                <li><a href="emblems.html">Emblemas</a></li>
+                <li><a href="news.html">Notícias</a></li>
+                <li><a href="videos.html">Vídeos</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <header class="main-header">
+        <h1>3ºD Promovendo a Inclusão Digital</h1>
+        <p class="subtitle">Tornando a web acessível para todos</p>
+        <div class="header-image-container">
+            <img src="img/valuesoftsistemas_valuehosthospedagem_image_206.jpeg.webp" alt="Pessoas de diversas origens e habilidades trabalhando juntas em frente a um computador, representando a acessibilidade e inclusão digital." class="header-image">
+        </div>
+    </header>
+    
+    <main>
+        <section id="accessibility-intro" class="section-card fade-in">
+            <h2>O que é Acessibilidade Digital?</h2>
+            <div class="intro-content">
+                <p>A acessibilidade digital se refere ao acesso a conteúdos e serviços online para todas as pessoas, independentemente de suas habilidades. Isso inclui a otimização de sites, aplicativos e outros recursos digitais para que sejam utilizáveis por pessoas com deficiências visuais, auditivas, motoras ou cognitivas.</p>
+                <p>Ao criar uma web mais inclusiva, garantimos que todos possam interagir, aprender e se comunicar de forma autônoma e segura. É um trabalho constante que beneficia a todos, não apenas as pessoas com deficiência, melhorando a usabilidade e a experiência de navegação.</p>
+            </div>
+        </section>
+
+        <section id="accessibility-types" class="section-card fade-in">
+            <h2>Tipos de Acessibilidade</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="img/fisico.png" alt="Emblema de Acessibilidade Física">
+                    <h3>Acessibilidade Física</h3>
+                    <p>Adaptação de ambientes físicos, como edifícios e transportes, para garantir o acesso de pessoas com mobilidade reduzida.</p>
+                </div>
+                <div class="card">
+                    <img src="img/braille.png" alt="Emblema da escrita Braille">
+                    <h3>Acessibilidade Digital</h3>
+                    <p>Desenvolvimento de websites e aplicativos que são utilizáveis por todos, incluindo usuários de leitores de tela.</p>
+                </div>
+                <div class="card">
+                    <img src="img/libras.png" alt="Emblema de Língua de Sinais">
+                    <h3>Acessibilidade Comunicacional</h3>
+                    <p>Criação de informações e comunicações que são claras e compreensíveis para todos, como legendas e audiodescrição.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Acessibilidade. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/menu.js"></script>
+    <script>
+        // JavaScript para a animação fade-in
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('.fade-in');
+            sections.forEach(section => {
+                section.style.opacity = 1;
+                section.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
+</body>
+</html>

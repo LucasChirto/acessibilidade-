@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos sobre Acessibilidade</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="menu-container">
+            <button id="menu-toggle" class="hamburger-button" aria-expanded="false" aria-controls="main-menu">
+                <span class="hamburger-icon"></span>
+            </button>
+            <ul id="main-menu" class="menu-list">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="accessibility.html">O que é Acessibilidade?</a></li>
+                <li><a href="emblems.html">Emblemas</a></li>
+                <li><a href="news.html">Notícias</a></li>
+                <li><a href="videos.html">Vídeos</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <header>
+        <h1>Vídeos sobre Acessibilidade</h1>
+        <p class="subtitle">Assista a alguns vídeos que ajudam a entender o tema.</p>
+    </header>
+    
+    <main>
+        <section class="section-card fade-in">
+            <h2>Vídeos da Minha Sala de Aula</h2>
+            <div class="video-container">
+               <iframe 
+                 width="100%" 
+                 height="450" 
+                 src="" 
+                 title="Vídeo sobre acessibilidade digital" 
+                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                 referrerpolicy="strict-origin-when-cross-origin" 
+                 allowfullscreen>
+               </iframe>
+            </div>
+            <p>Este vídeo aborda a importância da acessibilidade digital e como ela impacta a vida de milhões de pessoas. Espero que ajude a conscientizar sobre o tema!</p>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Acessibilidade. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/menu.js"></script>
+    <script>
+        // JavaScript para a animação fade-in
+        document.addEventListener('DOMContentLoaded', function() {
+            const section = document.querySelector('.section-card');
+            if (section) {
+                section.classList.add('visible');
+            }
+        });
+    </script>
+</body>
+</html>

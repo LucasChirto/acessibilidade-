@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O que é Acessibilidade?</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="menu-container">
+            <button id="menu-toggle" class="hamburger-button" aria-expanded="false" aria-controls="main-menu">
+                <span class="hamburger-icon"></span>
+            </button>
+            <ul id="main-menu" class="menu-list">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="accessibility.html">O que é Acessibilidade?</a></li>
+                <li><a href="emblems.html">Emblemas</a></li>
+                <li><a href="news.html">Notícias</a></li>
+                <li><a href="videos.html">Vídeos</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <header>
+        <h1>O que é Acessibilidade?</h1>
+    </header>
+    
+    <main>
+        <section class="info-section fade-in">
+            <div class="info-content">
+                <h2>Conceito e Abrangência</h2>
+                <p>Acessibilidade é a condição que permite que pessoas com diferentes habilidades, necessidades e características possam utilizar um determinado espaço, produto ou serviço com autonomia e segurança. Em outras palavras, acessibilidade é a possibilidade de acesso e uso por parte de todas as pessoas, sem que haja qualquer tipo de discriminação ou barreira.</p>
+                <p>A acessibilidade pode estar relacionada a diversos aspectos da vida em sociedade, como arquitetura e urbanismo, transporte, tecnologia, comunicação, cultura e lazer. Por exemplo, um prédio acessível é aquele que permite a entrada e locomoção de pessoas com mobilidade reduzida, com rampas, elevadores e banheiros adaptados.</p>
+                <p>Na tecnologia, a acessibilidade se refere à possibilidade de pessoas com deficiência visual, auditiva, motora ou cognitiva poderem utilizar dispositivos eletrônicos, como smartphones e computadores, por meio de recursos como legendas, audiodescrição, comandos de voz e outros recursos.</p>
+            </div>
+            <div class="info-image">
+               <img src="img/pessoa-com-deficiencia-scaled.png" alt="Grupo de pessoas com deficiências e habilidades variadas, de mãos dadas, simbolizando união e inclusão." class="main-image">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Acessibilidade. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/menu.js"></script>
+    <script>
+        // JavaScript para a animação fade-in
+        document.addEventListener('DOMContentLoaded', function() {
+            const section = document.querySelector('.info-section');
+            if (section) {
+                section.classList.add('visible');
+            }
+        });
+    </script>
+</body>
+</html>

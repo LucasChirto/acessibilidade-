@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícias sobre Acessibilidade</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="menu-container">
+            <button id="menu-toggle" class="hamburger-button" aria-expanded="false" aria-controls="main-menu">
+                <span class="hamburger-icon"></span>
+            </button>
+            <ul id="main-menu" class="menu-list">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="accessibility.html">O que é Acessibilidade?</a></li>
+                <li><a href="emblems.html">Emblemas</a></li>
+                <li><a href="news.html">Notícias</a></li>
+                <li><a href="videos.html">Vídeos</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <header>
+        <h1>Notícias sobre Acessibilidade</h1>
+    </header>
+    
+    <main>
+        <section id="news-section">
+            <h2>Últimas Notícias</h2>
+            <ul class="news-container">
+                <li>
+                    <a href="https://ge.globo.com/futebol/noticia/2025/09/19/luta-por-acessibilidade-casal-caca-estadios-busca-melhorias-e-expoe-problemas-de-cadeirantes.ghtml" target="_blank" class="news-card fade-in">
+                        <img src="img/abre-acessibilidade-estadios.png" alt="Pessoa digitando em um laptop com código na tela, representando o desenvolvimento de tecnologia inclusiva." class="news-image">
+                        <div class="news-content">
+                            <h3>Luta por acessibilidade: casal "caça" estádios, busca melhorias e expõe problemas de cadeirantes</h3>
+                            <p>Cláudio, que é cadeirante, e Karla já visitaram mais de 200 estádios pelo Brasil e pelo mundo; reportagem acompanhou os dois em São Januário e no Maracanã para entender a experiência.</p>
+                            <span class="read-more">Leia mais &rarr;</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.tre-sp.jus.br/comunicacao/noticias/2025/Setembro/setembro-acessivel-tre-sp-promove-evento-sobre-acessibilidade-e-enfrentamento-ao-capacitismo" target="_blank" class="news-card fade-in">
+                        <img src="img/906d296a-fe5b-4a1e-880c-68bd4378d9ff.jpeg" alt="Mãos segurando um documento, simbolizando o Plano Nacional de Inclusão." class="news-image">
+                        <div class="news-content">
+                            <h3>Setembro Acessível: TRE-SP promove evento sobre acessibilidade e enfrentamento ao capacitismo</h3>
+                            <p>Videocast será transmitido no YouTube no dia 24 e discutirá inclusão e cidadania.</p>
+                            <span class="read-more">Leia mais &rarr;</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www12.senado.leg.br/radio/1/noticia/2025/09/18/comissao-aprova-exigencia-de-acessibilidade-em-compras-publicas" target="_blank" class="news-card fade-in">
+                        <img src="img/2b189556-cb05-4574-ac85-7b85c996563d.jpeg" alt="Pessoas com deficiência e mobilidade reduzida em uma calçada acessível com piso tátil." class="news-image">
+                        <div class="news-content">
+                            <h3>Comissão aprova exigência de acessibilidade em compras públicas</h3>
+                            <p>Aprovado pela Comissão de Direitos Humanos, o projeto do senador Weverton (PDT-MA) determina que os editais de compras de produtos e de contratação de serviços pelo poder público se orientem pelas regras de acessibilidade previstas em lei (PL 4132/2021).</p>
+                            <span class="read-more">Leia mais &rarr;</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Acessibilidade. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/menu.js"></script>
+    <script>
+        // JavaScript para a animação fade-in
+        document.addEventListener('DOMContentLoaded', function() {
+            const newsCards = document.querySelectorAll('.news-card');
+            newsCards.forEach((card, index) => {
+                // Adiciona um pequeno atraso para cada cartão
+                setTimeout(() => {
+                    card.classList.add('visible');
+                }, index * 200); // 200ms de atraso entre cada cartão
+            });
+        });
+    </script>
+</body>
+</html>
